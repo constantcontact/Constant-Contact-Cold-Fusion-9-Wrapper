@@ -2,6 +2,8 @@ This file demonstrates how to use the CFC's in the CTCT_Wrapper Library.
 Coldfusion version 9,0,0,251028 Developer Edition   
 Java Version 1.6.0_14
 
+For ColdFusion 8, visit https://github.com/ctctsupport/Constant-Contact-ColdFusion-8
+
 For support please visit http://developer.constantcontact.com
 To report a bug or suggest improvements, please email WebServices@constantcontact.com
 
