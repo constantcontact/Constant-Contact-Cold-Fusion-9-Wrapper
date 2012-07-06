@@ -53,6 +53,16 @@
 				listName = local.listsXml.feed.entry[i].content.contactlist.name.xmltext,
 				updated = local.listsxml.feed.entry[i].updated.xmltext
 				};
+				
+			if (StructKeyExists(local.listsXml.feed.entry[i].content.contactlist, "OptInDefault"))
+				local.list.OptInDefault = local.listsXml.feed.entry[i].content.contactlist.OptInDefault.xmlText;
+
+			if (StructKeyExists(local.listsXml.feed.entry[i].content.contactlist, "DisplayOnSignup"))
+				local.list.DisplayOnSignup = local.listsXml.feed.entry[i].content.contactlist.DisplayOnSignup.xmlText;
+
+			if (StructKeyExists(local.listsXml.feed.entry[i].content.contactlist, "SortOrder"))
+				local.list.SortOrder = local.listsXml.feed.entry[i].content.contactlist.SortOrder.xmlText;
+
 			local.newList = new List(argumentCollection = local.list);
 			arrayAppend(local.listArray, local.newList);
 		}
